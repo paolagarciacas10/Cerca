@@ -1,10 +1,11 @@
 // JavaScript Document
-const cacheName = "cerca-cache-v2";
+const cacheName = "cerca-cache-v3";
 
 const filesToCache = [
     "/",
     "/dashboard.html",
-    "/explore.html",
+ "./Explore.html",
+    "./Saved.html",
     "/style.css",
     "/script.js",
     "/assets/logo.png"
