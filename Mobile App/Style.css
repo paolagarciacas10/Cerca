@@ -1,0 +1,1695 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ========================================
+   EXPLORE PAGE
+======================================== */
+
+.explore {
+    margin: 0;
+    min-height: 100vh;
+
+    background-color: #FFF6E6;
+    color: #3B2B24;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* APP NAME / LOGO ON EXPLORE */
+
+.explore .app-name {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding: 20px 5vw;
+}
+
+
+.explore .brand-logo {
+    width: 55px;
+    height: auto;
+}
+
+
+.explore .brand-name {
+    font-size: 32px;
+    font-weight: 800;
+
+    color: #3B2B24;
+}
+
+
+/* MAIN EXPLORE CONTENT */
+
+.explore main {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 30px 5vw 140px;
+}
+
+
+/* EXPLORE HEADER */
+
+.explore-header {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.explore .page-label {
+    margin: 0 0 12px;
+
+    color: #A94F32;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+
+.explore-header h1 {
+    margin: 0 0 16px;
+
+    font-size: clamp(48px, 5vw, 72px);
+
+    line-height: 1;
+
+    color: #3B2B24;
+}
+
+
+.explore #search-info {
+    margin: 0;
+
+    color: #715F52;
+
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/* ACTIVITY RESULTS */
+
+.explore .activity-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 22px;
+	
+    margin-top: 50px;
+
+}
+
+
+.explore .activity-card {
+    width: 100%;
+
+    background-color: #FFFBF3;
+
+    border: 1px solid #E5D5BE;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+.explore .card-content {
+    padding: 24px;
+}
+
+
+.explore .activity-card h2 {
+    margin: 0 0 10px;
+
+    font-size: 24px;
+
+    color: #3B2B24;
+}
+
+
+.explore .activity-card p {
+    color: #715F52;
+
+    line-height: 1.5;
+}
+
+
+/* NAVIGATION ON EXPLORE */
+
+.explore .bottom-nav {
+    position: fixed;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: calc(100% - 40px);
+    max-width: 620px;
+
+    display: flex;
+
+    padding: 10px;
+
+    background-color: #FFFBF3;
+
+    border: 1px solid #E5D5BE;
+    border-radius: 40px;
+
+    box-shadow: 0 8px 25px rgba(59, 43, 36, 0.12);
+
+    z-index: 100;
+}
+
+
+.explore .bottom-nav a {
+    flex: 1;
+
+    padding: 13px 10px;
+
+    border-radius: 30px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #715F52;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.explore .bottom-nav a.active {
+    background-color: #A94F32;
+    color: #FFF6E6;
+}
+
+
+.explore .bottom-nav a:hover {
+    background-color: #F3E3CE;
+    color: #3B2B24;
+}
+
+
+/* FOOTER */
+
+.explore .site-footer {
+    margin-top: 60px;
+
+    padding: 30px 5vw 120px;
+
+    border-top: 1px solid #E5D5BE;
+
+    text-align: center;
+
+    color: #715F52;
+
+    font-size: 13px;
+}
+/* PLACE DETAILS MODAL */
+
+.place-modal {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background-color: rgba(59, 43, 36, 0.45);
+
+    z-index: 999;
+}
+
+.place-modal[hidden] {
+    display: none;
+}
+
+
+.place-modal-content {
+    position: relative;
+
+    width: 100%;
+    max-width: 520px;
+
+    max-height: 80vh;
+    overflow-y: auto;
+
+    padding: 32px;
+
+    background-color: #FFFBF3;
+
+    border: 1px solid #E5D5BE;
+    border-radius: 24px;
+
+    box-shadow: 0 18px 45px rgba(59, 43, 36, 0.20);
+}
+
+
+.place-modal-content h2 {
+    margin: 0 45px 20px 0;
+
+    color: #3B2B24;
+
+    font-size: 30px;
+}
+
+
+#modal-details {
+    color: #715F52;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+#modal-details p {
+    margin: 10px 0;
+}
+
+
+.close-modal {
+    position: absolute;
+
+    top: 18px;
+    right: 18px;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #F3E3CE;
+
+    color: #3B2B24;
+
+    font-size: 24px;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+
+.close-modal:hover {
+    background-color: #A94F32;
+    color: #FFF6E6;
+}
+
+
+.close-modal:focus-visible {
+    outline: 3px solid #A94F32;
+    outline-offset: 3px;
+}
+
+/* TABLET */
+
+@media (min-width: 600px) {
+
+    .explore .activity-card {
+        width: calc(50% - 11px);
+    }
+
+}
+
+
+/* DESKTOP */
+
+@media (min-width: 900px) {
+
+    .explore .activity-card {
+        width: calc(33.333% - 15px);
+    }
+
+}
+
+
+
+/* GENERAL */
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* ========================================
+   GENERAL - DASHBOARD PAGE
+======================================== */
+
+.dashboard {
+    margin: 0;
+    min-height: 100vh;
+
+    background-color: #FFF6E6;
+    color: #3B2B24;
+
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+.dashboard * {
+    box-sizing: border-box;
+}
+
+
+
+
+.dashboard button,
+.dashboard input,
+.dashboard select,
+.dashboard a {
+    font: inherit;
+}
+
+
+
+
+.dashboard button {
+    cursor: pointer;
+}
+
+
+.dashboard button:focus-visible,
+.dashboard a:focus-visible,
+.dashboard input:focus-visible,
+.dashboard select:focus-visible {
+    outline: 3px solid #A94F32;
+    outline-offset: 4px;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.dashboard header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    padding-bottom: 12px;
+ 
+}
+
+
+.dashboard h1 {
+    max-width: 800px;
+    margin: 0 0 16px;
+    font-size: clamp(40px, 5vw, 72px);
+    line-height: 1;
+    letter-spacing: -3px;
+    color: #3B2B24;
+    padding-bottom: 44px;
+    padding-top: 46px;
+    text-align: left;
+}
+
+
+.dashboard header p {
+    max-width: 450px;
+    margin: 0;
+    color: #715F52;
+    font-size: 87px;
+    line-height: 0;
+    padding-top: 0px;
+	border-bottom: 1px solid #E5D5BE;
+
+}
+
+
+/* ========================================
+   MAIN CONTENT
+======================================== */
+
+.dashboard main {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 40px 5vw 120px;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.dashboard form {
+    max-width: 850px;
+}
+#dashboard .hero-row p {
+    font-size: 24px;
+	 margin: 0;
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #E5D5BE;
+
+    color: #715F52;
+}
+
+
+
+.dashboard .form-group {
+    margin-bottom: 22px;
+}
+
+
+.dashboard label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #3B2B24;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* Inputs */
+
+.dashboard input,
+.dashboard select {
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border: 1px solid #E5D5BE;
+
+    border-radius: 30px;
+
+    background-color: #FFFBF3;
+
+    color: #3B2B24;
+
+    font-size: 16px;
+}
+
+
+/* Placeholder */
+
+.dashboard input::placeholder {
+    color: #8C8178;
+}
+
+
+/* Input focus */
+
+.dashboard input:focus,
+.dashboard select:focus {
+    border-color: #A94F32;
+}
+
+
+/* ========================================
+   FIND ACTIVITIES BUTTON
+======================================== */
+   
+.dashboard form button {
+    margin-top: 8px;
+
+    padding: 14px 24px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #A94F32;
+
+    color: #FFF6E6;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.dashboard form button:hover {
+    background-color: #873E29;
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+.dashboard .bottom-nav a {
+    flex: 1;
+
+    padding: 13px 18px;
+
+    border-radius: 30px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #715F52;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.dashboard .bottom-nav a:hover {
+    background-color: #F3E3CE;
+    color: #3B2B24;
+}
+
+.dashboard .bottom-nav a.active {
+    background-color: #A94F32;
+    color: #FFF6E6;
+}
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.dashboard .bottom-nav {
+    position: fixed;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    width: calc(100% - 40px);
+    max-width: 520px;
+
+    padding: 10px;
+
+    background-color: #FFFBF3;
+
+    border: 1px solid #E5D5BE;
+    border-radius: 40px;
+
+    box-shadow: 0 8px 25px rgba(59, 43, 36, 0.12);
+
+    z-index: 100;
+}
+
+
+/* Navigation buttons */
+
+.dashboard .bottom-nav button {
+    flex: 1;
+
+    border: none;
+    border-radius: 30px;
+
+    padding: 13px 18px;
+
+    background-color: transparent;
+
+    color: #715F52;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* Hover */
+
+.dashboard .bottom-nav button:hover {
+    background-color: #F3E3CE;
+
+    color: #3B2B24;
+}
+
+
+/* Current page */
+
+.dashboard .bottom-nav button.active {
+    background-color: #A94F32;
+
+    color: #FFF6E6;
+}
+
+
+/* Keyboard accessibility */
+
+.dashboard .bottom-nav button:focus-visible {
+    outline: 3px solid #A94F32;
+    outline-offset: 3px;
+}
+/* CITY AUTOCOMPLETE */
+
+.form-group {
+    position: relative;
+}
+
+#city-suggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-top: 6px;
+
+    background-color: #FFFBF3;
+
+    border: 1px solid #E5D5BE;
+    border-radius: 12px;
+
+    padding: 8px;
+
+    box-shadow: 0 6px 16px rgba(59, 43, 36, 0.10);
+
+    z-index: 50;
+}
+.city-suggestion {
+    width: 100%;
+
+    padding: 9px 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #FFFBF3;
+
+    color: #3B2B24;
+
+    text-align: left;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+#city-suggestions:empty {
+    display: none;
+}
+
+.city-suggestion:last-child {
+    border-bottom: none;
+}
+
+.city-suggestion:hover,
+.city-suggestion:focus {
+    background-color: #F3E3CE;
+
+    outline: none;
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (min-width: 600px) and (max-width: 899px) {
+
+    .dashboard header {
+        padding: 40px 6vw 28px;
+    }
+
+
+    .dashboard main {
+        padding: 35px 6vw 120px;
+    }
+
+
+    .dashboard h1 {
+        font-size: 52px;
+    }
+
+
+    .dashboard form {
+        max-width: 700px;
+    }
+
+}
+
+
+/* ========================================
+   DESKTOP / LAPTOP
+======================================== */
+
+@media (min-width: 900px) {
+
+    .dashboard header {
+        padding-top: 55px;
+    }
+
+
+    .dashboard h1 {
+        font-size: 68px;
+    }
+
+
+    .dashboard form {
+        max-width: 800px;
+    }
+
+}
+
+
+/* ========================================
+   PHONE
+======================================== */
+
+@media (max-width: 599px) {
+
+    .dashboard header {
+        padding: 28px 20px 24px;
+    }
+
+
+    .dashboard main {
+        padding: 28px 20px 110px;
+    }
+
+
+    .dashboard h1 {
+        font-size: 42px;
+
+        letter-spacing: -2px;
+    }
+
+
+    .dashboard header p {
+        font-size: 15px;
+		
+    }
+
+
+    .dashboard input,
+    .dashboard select {
+        padding: 14px 16px;
+    }
+
+
+    .dashboard .bottom-nav {
+        justify-content: space-around;
+
+        gap: 0;
+    }
+
+}
+.site-footer {
+    margin-top: 94px;
+    padding: 24px 20px 100px;
+    border-top: 1px solid #E5D5BE;
+    text-align: center;
+    color: #715F52;
+    font-size: 13px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+.hero-copy {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 5vw 20px;
+}
+
+.hero-copy h1 {
+    margin: 0 0 20px;
+
+    font-size: clamp(48px, 6vw, 86px);
+    line-height: 1;
+    letter-spacing: -4px;
+
+    color: #3B2B24;
+}
+
+.hero-copy p {
+    margin: 0;
+border-bottom: 1px solid #E5D5BE;
+    font-size: 20px;
+    line-height: 1.5;
+
+    color: #715F52;
+}
+
+.top-brand {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding: 18px 5vw;
+}
+
+.brand-logo {
+    width: 90px;
+    height: auto;
+    padding-left: 0px;
+}
+
+.brand-name {
+    font-size: 32px;
+    font-weight: 800;
+    color: #715F52;
+    padding-left: 13px;
+}
+.error-message {
+    margin-top: 20px;
+
+    color: #8B2E1E;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+/* ========================================
+   CENTER EXPLORE CONTENT
+======================================== */
+
+.explore-header {
+    text-align: center;
+
+    max-width: 900px;
+    margin: 70px auto 50px;
+}
+
+
+.explore .page-label {
+    font-size: 14px;
+    letter-spacing: 3px;
+
+    margin-bottom: 18px;
+}
+
+
+.explore-header h1 {
+    font-size: clamp(60px, 7vw, 96px);
+
+    margin-bottom: 24px;
+}
+
+
+.explore #search-info {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    font-size: 26px;
+    line-height: 1.4;
+
+    color: #715F52;
+}
+
+
+/* CENTER RESULTS AREA */
+
+.explore .activity-grid {
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+}
+
+
+/* PLACEHOLDER TEXT */
+
+.explore .activity-grid > p {
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    color: #715F52;
+}
+
+/* ========================================
+   CARDS
+======================================== */
+
+.explore .activity-card {
+    background-color: #FFFBF3;
+
+    border: 1px solid #E5D5BE;
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 24px rgba(59, 43, 36, 0.08);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+.explore .activity-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 30px rgba(59, 43, 36, 0.12);
+}
+
+
+.explore .card-content {
+    padding: 24px;
+}
+
+
+/* TOP OF CARD */
+
+.explore .card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+/* CATEGORY LABEL */
+
+.explore .activity-type {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 30px;
+
+    background-color: #F3D6B8;
+
+    color: #8A4B32;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* PLACE NAME */
+
+.explore .activity-card h2 {
+    margin: 0 0 12px;
+
+    font-size: 24px;
+    line-height: 1.2;
+
+    color: #3B2B24;
+}
+
+
+/* ADDRESS */
+
+.explore .activity-address {
+    margin: 0 0 22px;
+
+    color: #715F52;
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+/* SAVE BUTTON */
+
+.explore .save-button {
+    padding: 8px 13px;
+
+    border: 1px solid #A94F32;
+    border-radius: 30px;
+
+    background-color: transparent;
+
+    color: #A94F32;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.explore .more-info-button {
+    display: inline-block;
+
+    margin-top: 18px;
+    margin-right: 10px;
+
+    padding: 9px 14px;
+
+    border: 1px solid #A94F32;
+    border-radius: 20px;
+
+    background-color: #A94F32;
+
+    color: #FFF6E6;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.explore .more-info-button:hover {
+    background-color: #3B2B24;
+    border-color: #3B2B24;
+}
+
+.explore .more-info-button:focus-visible {
+    outline: 3px solid #A94F32;
+    outline-offset: 3px;
+}
+
+.explore .save-button:hover {
+    background-color: #A94F32;
+    color: #FFF6E6;
+}
+
+
+/* VIEW DETAILS LINK */
+
+.explore .details-link {
+    display: inline-block;
+
+    color: #A94F32;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.explore .details-link {
+    display: block;
+    margin-top: 12px;
+    width: fit-content;
+}
+.explore .details-link:hover {
+    text-decoration: underline;
+}
+/* ========================================
+   SAVED PAGE
+======================================== */
+
+.saved {
+    margin: 0;
+    min-height: 100vh;
+
+    background-color: #FFF6E6;
+    color: #3B2B24;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* MAIN CONTENT */
+
+.saved main {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    padding: 30px 5vw 140px;
+}
+
+
+/* ========================================
+   CERCA BRAND
+======================================== */
+
+.saved .app-name {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 60px;
+}
+
+
+.saved .brand-logo {
+    width: 55px;
+    height: auto;
+}
+
+
+.saved .brand-name {
+    font-size: 32px;
+    font-weight: 800;
+
+    color: #3B2B24;
+}
+
+
+/* ========================================
+   SAVED HEADER
+======================================== */
+
+.saved-header {
+    max-width: 900px;
+
+    margin: 40px auto 55px;
+
+    text-align: center;
+}
+
+.saved .page-label {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.saved .page-label {
+    display: block;
+
+    margin: 0 auto 15px;
+
+    text-align: center;
+
+    color: #A94F32;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+
+.saved-header h1 {
+    margin: 0 0 20px;
+
+    font-size: clamp(52px, 6vw, 86px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    color: #3B2B24;
+}
+
+
+.saved-header p {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    color: #715F52;
+
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   SAVED RESULTS
+======================================== */
+
+#saved-results {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 22px;
+}
+.saved-category {
+    margin-bottom: 55px;
+}
+
+
+.saved-category > h2 {
+    margin: 0 0 20px;
+
+    color: #3B2B24;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.saved-category-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 22px;
+}
+
+
+.saved .activity-card h3 {
+    margin: 0 0 12px;
+
+    color: #3B2B24;
+
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+/* SAVED CARDS */
+
+.saved .activity-card {
+    width: 100%;
+
+    background-color: #FFFBF3;
+
+    border: 1px solid #E5D5BE;
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 24px rgba(59, 43, 36, 0.08);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+.saved .activity-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 30px rgba(59, 43, 36, 0.12);
+}
+
+
+.saved .card-content {
+    padding: 24px;
+}
+
+
+/* CATEGORY */
+
+.saved .activity-type {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    padding: 7px 12px;
+
+    border-radius: 30px;
+
+    background-color: #F3D6B8;
+
+    color: #8A4B32;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* PLACE NAME */
+
+.saved .activity-card h2 {
+    margin: 0 0 12px;
+
+    color: #3B2B24;
+
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+
+/* ADDRESS */
+
+.saved .activity-address {
+    margin: 0;
+
+    color: #715F52;
+
+    font-size: 15px;
+    line-height: 1.5;
+}
+.saved-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.saved .share-button,
+.saved .remove-button {
+    padding: 7px 11px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.saved .share-button {
+    border: 1px solid #715F52;
+
+    background-color: transparent;
+
+    color: #715F52;
+}
+
+.saved .share-button:hover {
+    background-color: #715F52;
+
+    color: #FFF6E6;
+}
+
+.saved .remove-button {
+    border: 1px solid #A94F32;
+
+    background-color: transparent;
+
+    color: #A94F32;
+}
+
+.saved .remove-button:hover {
+    background-color: #A94F32;
+
+    color: #FFF6E6;
+}
+
+/* ========================================
+   EMPTY SAVED MESSAGE
+======================================== */
+
+.saved .empty-message {
+    width: 100%;
+
+    padding: 70px 20px;
+
+    text-align: center;
+
+    color: #715F52;
+
+    font-size: 18px;
+
+    border: 1px dashed #E5D5BE;
+    border-radius: 22px;
+
+    background-color: #FFFBF3;
+}
+
+
+/* ========================================
+   SAVED NAVIGATION
+======================================== */
+
+.saved .bottom-nav {
+    position: fixed;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: calc(100% - 40px);
+    max-width: 620px;
+
+    display: flex;
+
+    padding: 10px;
+
+    background-color: #FFFBF3;
+
+    border: 1px solid #E5D5BE;
+    border-radius: 40px;
+
+    box-shadow: 0 8px 25px rgba(59, 43, 36, 0.12);
+
+    z-index: 100;
+}
+
+
+.saved .bottom-nav a {
+    flex: 1;
+
+    padding: 13px 10px;
+
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    color: #715F52;
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.saved .bottom-nav a.active {
+    background-color: #A94F32;
+
+    color: #FFF6E6;
+}
+
+
+.saved .bottom-nav a:hover {
+    background-color: #F3E3CE;
+
+    color: #3B2B24;
+}
+
+
+/* ========================================
+   SAVED FOOTER
+======================================== */
+
+.saved .site-footer {
+    margin-top: 70px;
+
+    padding: 30px 5vw 120px;
+
+    border-top: 1px solid #E5D5BE;
+
+    text-align: center;
+
+    color: #715F52;
+
+    font-size: 13px;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (min-width: 600px) {
+
+    .saved .activity-card {
+        width: calc(50% - 11px);
+    }
+
+}
+
+
+/* ========================================
+   DESKTOP
+======================================== */
+
+@media (min-width: 900px) {
+
+    .saved .activity-card {
+        width: calc(33.333% - 15px);
+    }
+
+}
+
+
+/* ========================================
+   PHONE
+======================================== */
+
+@media (max-width: 599px) {
+
+    .saved main {
+        padding: 24px 20px 120px;
+    }
+
+
+    .saved .app-name {
+        margin-bottom: 40px;
+    }
+
+
+    .saved-header {
+        margin-top: 25px;
+        margin-bottom: 40px;
+    }
+
+
+    .saved-header h1 {
+        font-size: 46px;
+
+        letter-spacing: -2px;
+    }
+
+
+    .saved-header p {
+        font-size: 16px;
+    }
+
+}
+
+/* SAVED CITY FILTER */
+
+.saved-filter {
+    max-width: 1100px;
+
+    margin: 0 auto 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+
+.saved-filter label {
+    color: #3B2B24;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.saved-filter select {
+    min-width: 220px;
+
+    padding: 11px 38px 11px 15px;
+
+    border: 1px solid #E5D5BE;
+    border-radius: 20px;
+
+    background-color: #FFFBF3;
+
+    color: #3B2B24;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.saved-filter select:hover {
+    border-color: #A94F32;
+}
+
+
+.saved-filter select:focus-visible {
+    outline: 3px solid #A94F32;
+    outline-offset: 3px;
+}
+
+
+@media (max-width: 599px) {
+
+    .saved-filter {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .saved-filter select {
+        width: 100%;
+    }
+
+}
+
+/* SAVED CITY DROPDOWN */
+
+.saved-filter {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.saved-filter label {
+    color: #3B2B24;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.saved-filter select {
+    min-width: 230px;
+
+    padding: 11px 38px 11px 16px;
+
+    border: 1px solid #E5D5BE;
+    border-radius: 22px;
+
+    background-color: #FFFBF3;
+
+    color: #3B2B24;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 14px rgba(59, 43, 36, 0.08);
+}
+
+.saved-filter select:hover {
+    border-color: #A94F32;
+}
+
+.saved-filter select:focus-visible {
+    outline: 3px solid #A94F32;
+    outline-offset: 3px;
+}
+
+.saved .more-info-button {
+    padding: 7px 12px;
+
+    border: 1px solid #A94F32;
+    border-radius: 20px;
+
+    background-color: #A94F32;
+
+    color: #FFF6E6;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.saved .more-info-button:hover {
+    background-color: #3B2B24;
+    border-color: #3B2B24;
+}
+
+.saved .more-info-button:focus-visible {
+    outline: 3px solid #A94F32;
+    outline-offset: 3px;
+}
+
+.saved-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.saved-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    margin-bottom: 28px;
+}

@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Dasboard</title>
+	  <meta charset="UTF-8">
+
+<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="shortcut icon" href="favicon.png">
+<head>
+    <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+		  
+		  
+    >
+
+    <title>Dasboard</title>
+
+    <link rel="stylesheet" href="Style.css">
+
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+	<body class="dashboard">
+	</body>
+    <main>
+<div class="app-name">
+	  <img
+        src="assets/logo.png"
+        alt="Your App Name logo"
+        class="brand-logo"
+    >
+   <span class="brand-name">
+        Cerca
+    </span>
+</div>
+
+
+
+        <!-- DASHBOARD -->
+        <section id="dashboard" class="page active">
+<div class="hero-row">
+            <header>
+				
+                <h1>Find the right event at the right time!</h1>
+				
+		</header>
+				<p>
+                    Enter your location and find activities around you.
+                </p>
+				<header class="hero-header">
+
+    
+            </header>
+				</div>
+<nav class="bottom-nav" aria-label="Main navigation">
+
+    <a href="dashboard.html" class="active">
+        Dashboard
+    </a>
+
+    <a href="explore.html">
+        Explore
+    </a>
+
+    <a href="saved.html">
+        Saved
+    </a>
+
+</nav>
+			<a> </a>
+
+            <form id="searchForm" action="Explore.html" method="get">
+
+                <div class="form-group">
+
+                    <label for="location">
+                        Location
+                    </label>
+
+         <input
+    type="text"
+    id="location"
+    name="location"
+    placeholder="Example: Nashville, TN"
+    autocomplete="off"
+    required
+>
+<div id="city-suggestions" role="listbox"></div>
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="date">
+                        Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="time">
+                        Time
+                    </label>
+
+                    <input
+                        type="time"
+                        id="time"
+                        name="time"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="category">
+                        What do you want to do?
+                    </label>
+
+                    <select id="category" name="category">
+
+                       <option value="food">Food</option>
+<option value="coffee">Coffee &amp; Cafes</option>
+<option value="nightlife">Nightlife</option>
+<option value="entertainment">Entertainment</option>
+<option value="shopping">Shopping</option>
+<option value="outdoors">Outdoors</option>
+<option value="attractions">Attractions</option>
+<option value="museums">Museums</option>
+<option value="sports">Sports &amp; Recreation</option>
+<option value="wellness">Wellness &amp; Spa</option>
+
+                    </select>
+
+                </div>
+
+
+                <button type="submit">
+                    Find Activities
+                </button>
+
+            </form>
+
+</section>
+
+               
+<footer class="site-footer">
+    <p>&copy; 2026 Paola Garcia. All rights reserved.</p>
+</footer>
+
+      
+    </main>
+
+<script src="script.js"></script>
+	<script>
+if ("serviceWorker" in navigator) {
+
+    navigator.serviceWorker.register("service-worker.js");
+
+}
+</script>  
+
+    
+
+
+  
+
+</body>
+	<link rel="manifest" href="manifest.json">
+
+	</head>
+
+<body>
+</body>
+</html>

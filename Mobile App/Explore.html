@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore</title>
+	   <link rel="stylesheet" href="Style.css">
+	<link rel="manifest" href="manifest.json">
+
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="shortcut icon" href="favicon.png">
+</head>
+
+<body class="explore">
+	   <main>
+
+        <div class="app-name">
+
+            <img
+                src="assets/logo.png"
+                alt="Location app logo"
+                class="brand-logo"
+            >
+
+            <span class="brand-name">
+                Cerca
+            </span>
+
+        </div>
+
+
+        <section class="explore-header">
+
+            <p class="page-label">EXPLORE</p>
+
+            <h1>Things to do</h1>
+
+            <p id="search-info">
+                Your search information will appear here.
+            </p>
+
+        </section>
+
+
+        <section
+            id="activity-results"
+            class="activity-grid"
+        >
+
+            <p>
+                Activities will appear here.
+            </p>
+			<p id="results-error" class="error-message" aria-live="polite"></p>
+
+        </section>
+		   <div id="place-modal"
+     class="place-modal"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="modal-title"
+     hidden>
+
+    <div class="place-modal-content">
+
+        <button id="close-modal"
+                class="close-modal"
+                type="button"
+                aria-label="Close place details">
+            ×
+        </button>
+
+        <h2 id="modal-title">
+            Place details
+        </h2>
+
+        <div id="modal-details"></div>
+
+    </div>
+
+</div>
+
+    </main>
+	 <nav class="bottom-nav" aria-label="Main navigation">
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="explore.html" class="active">
+            Explore
+        </a>
+
+        <a href="saved.html">
+            Saved
+        </a>
+
+    </nav>
+	  <footer class="site-footer">
+        <p>&copy; 2026 Paola Garcia. All rights reserved.</p>
+    </footer>
+	<script src="script.js"></script>
+	<script>
+if ("serviceWorker" in navigator) {
+
+    navigator.serviceWorker.register("service-worker.js");
+
+}
+</script>
+</body>
+</html>
